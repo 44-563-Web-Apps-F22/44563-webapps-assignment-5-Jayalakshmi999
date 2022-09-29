@@ -11,10 +11,64 @@
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" 
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+    <style>
+      tr,th,td{
+        border:1px solid green;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      thead{
+        color:deeppink;
+      }
+      thead:hover{
+        
+        background-color: aqua;
+      }
+      td{
+        color:blueviolet;
+      }
+      .ro:nth-child(odd) {
+            background-color: #8F9AA5;
+        }
+        .ro:nth-child(even) {
+            background-color: #1b87f2;
+        }
+        caption{
+          color:brown;
+          text-align: center;
+        }
+        .butn{
+          background-color: cornsilk;
+        }
+        #dropdownMenubar{
+          background-color: chartreuse;
+        }
+        nav{
+          background-color:aquamarine;
+        }
+    </style>
     
   
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <a class="navbar-brand" href="insects.html">Interesting Insects</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="advanced.html">Advanced</a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+
 <h1>Insects by Jaya Lakshmi Medikonda</h1>
 <div class="container">
     <div class="row">
@@ -37,6 +91,129 @@
 </div>
 <br>
 <p>The Insects names breaks first because the class of the insects name in div is “col-md” which breaks if the screen size is less than 992px wide(this is used for small laptop sizes) which is less than the class of the letters in div is “col-sm” which breaks if screen size is less than 768px wide(This is used for Tablets screen size)</p>
+<div class="container">
+  <img src="moth.jpg" class="img-fluid" alt="Moth Insect" width="400" height="450" />
+  <img src="earwing.jpg" class="img-fluid" alt="Earwing Insect" width="400" height="400"/>
+  <img src="diplura.jpg" class="img-fluid" alt="Diplura Insect" width="400" height="400"/>
+
+</div>
+<div class="container">
+  <img src="moth.jpg" class="img-thumbnail" alt="Moth Insect" width="450" height="450" />
+  <img src="earwing.jpg" class="img-thumbnail" alt="Earwing Insect" width="450" height="450"/>
+  <img src="diplura.jpg" class="img-thumbnail" alt="Diplura Insect" width="450" height="450"/>
+
+
+</div>
+
+
+
+<table class="table" >
+  <caption>Table of insects,cities and rivers</caption>
+  <thead>
+    <tr>
+      <th scope="col">Letter</th>
+      <th scope="col">Insect</th>
+      <th scope="col">City</th>
+      <th scope="col">River</th>
+    </tr>
+  </thead>
+  <tr class="ro">
+          <td >M</td> 
+          <td >Moth</td>
+          <td>Manglore</td>
+          <td>Moosi</td>
+  </tr>
+  <tr class="ro">
+    <td >E</td> 
+    <td >Earwing</td>
+    <td>Eastcoast</td>
+    <td>Eagleriver</td>
+</tr>
+<tr class="ro">
+  <td >D</td> 
+  <td >Diplura</td>
+  <td>Delhi</td>
+  <td>Danriver</td>
+</tr>
+<tr class="ro">
+  <td >I</td> 
+  <td >Isoptera</td>
+  <td>Istanbul</td>
+  <td>Iditarod</td>
+</tr>
+<tr class="ro">
+  <td >K</td> 
+  <td >Kafer</td>
+  <td>Karnataka</td>
+  <td>Krishna</td>
+</tr >
+<tr class="ro">
+  <td >O</td> 
+  <td >Otter</td>
+  <td>Odissa</td>
+  <td>Otay</td>
+</tr>
+
+</table>
+
+<label>Button</label>
+<br>
+<div class="btn" >
+  <button type="button" class="butn">M</button>
+  <button type="button" class="butn">E</button>
+  <button type="button" class="butn">D</button>
+  <button type="button" class="butn">I</button>
+  <button type="button" class="butn">K</button>
+  <button type="button" class="butn">O</button>
+</div>
+<br>
+<label>Colored Buttons:</label>
+<div class="btn-toolbar">
+<div id="first group" class="btn-group">
+  <button type="button" class="btn btn-success">M</button>
+  <button type="button" class="btn btn-success">E</button>
+  <button type="button" class="btn btn-success">D</button>
+</div>
+<div id="second group" class="btn-group">
+  <button type="button" class="btn btn-warning">I</button>
+  <button type="button"class="btn btn-warning">K</button>
+
+</div>
+<div id="third group" class="btn-group">
+  <button type="button" class="btn btn-danger">O</button>
+</div>
+</div>
+
+<div class="dropdown" >
+  <button class="btn btn-secondary dropdown-toggle"  role="button" id="dropdownMenubar" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown
+  </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenubar">
+        <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+        <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+      </ul>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+  
+    </div>
+    <div class="form-group">
+      <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter your insect">
+      
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+      
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+
+
 
 </body>
 </html>
